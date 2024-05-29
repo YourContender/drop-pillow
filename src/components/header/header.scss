@@ -1,0 +1,34 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    img {
+        width: 80px;
+    }
+    &_buttons {
+        &-write, &-order {
+            font-family:'Times New Roman', Times, serif;
+            height: 50px;
+            width: 155px;
+            text-transform: uppercase;
+            background-color: #242323;
+            color: #fff;
+            border-radius: 8px;
+            transition: .6s ease-in-out;
+            &:hover {
+                background: none;
+                color: #242323;
+            }
+        }
+        &-order {
+            margin-right: 10px;
+            background: none;
+            color: #242323;
+            &:hover {
+                background: #242323;
+                color: #fff;
+            }
+        }
+    }
+}

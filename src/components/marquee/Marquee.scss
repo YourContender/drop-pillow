@@ -1,0 +1,44 @@
+.marquee {
+    color: #000;
+    position: absolute;
+    left: 0;
+    background-color: #EBD96B;
+    height: 80px;
+    overflow: hidden;
+    text-transform: uppercase;
+    width: 100%;
+    margin: 0px auto;
+    font-size: 42px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+}
+  
+.marquee-inner {
+    display: flex;
+    text-align: center;
+    width: 200%;
+    &-item {
+        width: 100%;
+        span {
+            font-weight: 700;
+            color: rgb(6, 102, 14);
+            text-decoration: underline;
+        }
+    }
+        
+}
+  
+@keyframes run {
+    0% {
+        //
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+  
+.run {
+    animation: run infinite 30s linear;
+}
