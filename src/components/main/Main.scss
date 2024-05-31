@@ -67,3 +67,118 @@
         }
     }
 }
+
+@media (max-width: 1200px) {
+	.main {
+        img {
+            width: 400px;
+        }
+        &_title {
+            &-h1 {
+                font-size: 54px;
+            }
+            &-descr {
+                font-size: 22px;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+	.main {
+        position: relative;
+        img {
+            margin-top: 15px;
+            width: 320px;
+            z-index: 0;
+        }
+        &_container {
+            padding-bottom: 20px;
+            width: 100%;
+        }
+        &_title {
+            &-container {
+                width: auto;
+            }
+            &-h1 {
+                font-size: 48px;
+            }
+            &-descr {
+                font-size: 20px;
+            }
+            &-span {
+                &::after {
+                    top: 8px;
+                    height: 59px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+	.main {
+        &_container {
+            display: flex;
+            flex-direction: column;
+            align-items: center
+        }
+        img {
+            width: 100%;
+        }
+        h1 {
+            margin: 0;
+            font-size: 54px;
+            margin-bottom: 25px;
+        }
+        &_title {
+            &-container {
+                text-align: center;
+                padding: 0;
+            }
+        }
+        &_titles {
+            width: 500px;
+            margin-top: 45px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &_btn {
+            margin: 35px 0 0 0;
+        }
+        &_photo {
+            margin: 0;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+	.main {
+        &_container {
+            width: 95%;
+        }
+        &_titles {
+            width: 320px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+	.main {
+        h1 {
+            font-size: 42px;
+        }
+        &_title {
+            &-descr {
+                font-size: 18px;
+            }
+            &-span {
+                &::after {
+                    top: 5px;
+                    height: 48px;
+                }
+            }
+        }
+    }
+}

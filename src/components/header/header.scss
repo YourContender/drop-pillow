@@ -7,6 +7,8 @@
         width: 80px;
     }
     &_buttons {
+        display: flex;
+        align-items: center;
         &-write, &-order {
             font-family:'Times New Roman', Times, serif;
             height: 50px;
@@ -30,5 +32,36 @@
                 color: #fff;
             }
         }
+        &-write {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;            
+            outline: 1px solid #242323;
+            font-size: 13px;
+            letter-spacing: 1px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .header {
+        &_buttons {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0;
+            button, a {
+                margin: 5px 0 5px 0;
+                width: 170px;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .header {
+        justify-content: space-around;
     }
 }

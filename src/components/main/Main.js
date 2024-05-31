@@ -2,7 +2,14 @@ import React from "react";
 import main from "../../img/main.png";
 import "./Main.scss";
 
-export const Main = ({ openModal, setOpenModal }) => {
+export const Main = () => {
+	const scrollToSection = (id) => {
+		const element = document.getElementById(id);
+		if (element) {
+			element.scrollIntoView({ behavior: "smooth" });
+		}
+	};
+
 	return (
 		<section className="main">
 			<div className="main_container">
@@ -12,10 +19,13 @@ export const Main = ({ openModal, setOpenModal }) => {
 							Ортопедична <span className="main_title-span">подушка</span>
 						</h1>
 						<span className="main_title-descr">
-							для комортного та якісного сну
+							для комфортного та якісного сну
 						</span>
 					</div>
-					<button className="main_btn" onClick={() => setOpenModal(!openModal)}>
+					<button
+						onClick={() => scrollToSection("product")}
+						className="main_btn"
+					>
 						замовити зараз
 					</button>
 				</div>

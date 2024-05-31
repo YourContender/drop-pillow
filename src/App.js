@@ -12,11 +12,11 @@ export const App = () => {
 
 	return (
 		<div className="container">
-			<Header openModal={openModal} setOpenModal={setOpenModal} />
-			<Main openModal={openModal} setOpenModal={setOpenModal} />
+			<Header />
+			<Main />
 			<Marquee />
+			<Product setOpenModal={setOpenModal} />
 			{openModal ? <Modal setOpenModal={setOpenModal} /> : null}
-			<Product />
 			<Footer />
 		</div>
 	);
