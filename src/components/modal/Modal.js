@@ -14,13 +14,6 @@ export const Modal = ({ setOpenModal }) => {
 				<h2>
 					Дякуємо, наш менеджер з Вами зв'яжеться для уточнення замовлення.
 				</h2>
-				{/* <div className="modal-forms">
-					<input type="text" placeholder="введіть номер телефону" />
-					<input type="text" placeholder="введіть місто проживання" />
-					<input type="text" placeholder="введіть № відділення НП" />
-				</div>
-
-				<button className="modal_container-send">Відправити</button> */}
 			</div>
 		</div>
 	);

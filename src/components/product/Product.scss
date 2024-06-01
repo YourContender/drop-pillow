@@ -87,7 +87,7 @@
     margin: 0;
     position: absolute;
     top: -23px;
-    right: 0;
+    left: 0;
     font-size: 18px;
     color: red;
     font-weight: 700;
@@ -98,7 +98,7 @@
 }
 
 .label_error {
-    color: red !important; 
+    display: none;
 }
 
 
@@ -106,10 +106,18 @@
 	.product {
         margin-top: 100px;
         padding: 0;
+        &_forms {
+            .input-box {
+                width: 90%;
+
+            }
+        }
         img {
-            width: 400px;
+            width: 390px;
         }
         &_descr {
+            width: 100%;
+            margin-left: 0;
             h1 {
                 line-height: 42px;
                 font-size: 25px;
@@ -125,7 +133,7 @@
         align-items: center;
         &_descr {
             text-align: center;
-            width: 95%;
+            width: 100%;
             h1 {
                 font-size: 35px;
             }
