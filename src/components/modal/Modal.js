@@ -1,4 +1,5 @@
 import React from "react";
+import modal from "../../img/modal.png";
 import "./Modal.scss";
 
 export const Modal = ({ setOpenModal }) => {
@@ -11,9 +12,11 @@ export const Modal = ({ setOpenModal }) => {
 				>
 					&times;
 				</button>
-				<h2>
-					Дякуємо, наш менеджер з Вами зв'яжеться для уточнення замовлення.
-				</h2>
+				<img src={modal} alt="" />
+				<div className="modal_text">
+					<h1>Дякуємо за замовлення</h1>
+					<h2>Наш менеджер з Вами зв'яжеться для уточнення замовлення.</h2>
+				</div>
 			</div>
 		</div>
 	);
